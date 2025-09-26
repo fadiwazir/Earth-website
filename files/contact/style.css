@@ -1,0 +1,215 @@
+@import url("https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap");
+
+:root {
+  --primary-light: #74a84a;
+  --primary-dark: #2c541d;
+  --black: #000000;
+  --white: #efefef;
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Jost";
+  scroll-behavior: smooth;
+}
+.home-img {
+  height: 100vh;
+  width: auto;
+  background-image: url(/img/about-bannerr.png);
+  background-repeat: no-repeat;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 100px;
+}
+header h1 {
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+header ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  list-style-type: none;
+}
+header li a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: var(--black);
+  font-weight: 500;
+  padding: 10px 14px;
+  margin: 10px;
+  border-radius: 24px;
+  transition: 0.4s ease-in-out;
+}
+header li a:hover {
+  background-color: rgba(116, 168, 74, 0.5);
+}
+.hero-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  height: 40vh;
+  text-transform: uppercase;
+  line-height: 80px;
+}
+.hero-section h1 {
+  font-size: 100px;
+  font-weight: 400;
+  color: var(--primary-dark);
+  letter-spacing: 4px;
+}
+.hero-section h2 {
+  font-size: 50px;
+  font-weight: 300;
+  letter-spacing: 3px;
+}
+.btn {
+  border: none;
+  color: var(--white);
+  background-color: var(--primary-light);
+  padding: 10px 60px;
+  font-size: 18px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  transition: 0.4s;
+  margin-top: 20px;
+}
+.btn:hover {
+  background-color: var(--primary-dark);
+}
+.contact {
+  display: flex;
+  justify-content: center;
+}
+.contact-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+}
+.get-in-touch {
+  display: flex;
+  justify-content: start;
+  flex-direction: column;
+  background-color: #f8f8f8;
+  padding: 40px;
+  border-radius: 18px;
+  margin: 80px 50px;
+}
+.get-in-touch h1 {
+  font-weight: 400;
+}
+.get-in-touch .form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.get-in-touch .form input,
+textarea,
+button {
+  margin: 10px 0;
+}
+.get-in-touch .form input,
+textarea {
+  padding: 10px;
+  border: none;
+  border-radius: 18px;
+  outline: none;
+}
+
+.get-in-touch .form ::placeholder {
+  color: #575757;
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.talk-to-us {
+  display: flex;
+  justify-content: start;
+  flex-direction: column;
+  background-color: #f8f8f8;
+  padding: 40px;
+  border-radius: 18px;
+  margin: 80px 50px;
+  height: 400px;
+}
+
+.talk-to-us h1 {
+  font-weight: 400;
+}
+.talk-to-us .email {
+  display: flex;
+  align-items: center;
+  margin: 20px 0;
+}
+.talk-to-us .email img {
+  width: 30px;
+  margin-right: 10px;
+}
+.talk-to-us .email .text {
+  display: flex;
+  flex-direction: column;
+  color: #575757;
+}
+.talk-to-us .email .text h4 {
+  font-size: 12px;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+.talk-to-us .email .text h3 {
+  font-size: 12px;
+  font-weight: 500;
+  color: #2c2c2c;
+}
+.talk-to-us .follow h1 {
+  font-size: 18px;
+  font-weight: 400;
+}
+.talk-to-us .icons img{
+    width: 20px;
+}
+.talk-section {
+  margin-top: 400px;
+  width: 100%;
+  height: 533px;
+  background-repeat: no-repeat;
+  background-image: url(/img/talk-to-us.png);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.talk-section h1 {
+  font-size: 38px;
+  text-transform: uppercase;
+  font-weight: 500;
+  color: var(--primary-dark);
+  letter-spacing: 2px;
+}
+.talk-section p {
+  max-width: 400px;
+  text-align: center;
+  margin: 10px 0;
+}
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 10px 100px;
+}
+footer h2 {
+  text-transform: uppercase;
+  font-weight: 700;
+}
+footer h3 {
+  color: #575757;
+  font-weight: 400;
+}

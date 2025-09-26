@@ -1,0 +1,146 @@
+@import url("https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap");
+
+:root {
+  --primary-light: #74a84a;
+  --primary-dark: #2c541d;
+  --black: #000000;
+  --white: #efefef;
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Jost";
+  scroll-behavior: smooth;
+}
+.home-img {
+  height: 100vh;
+  width: auto;
+  background-image: url(/img/about-bannerr.png);
+  background-repeat: no-repeat;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 100px;
+}
+header h1 {
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+header ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  list-style-type: none;
+}
+header li a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: var(--black);
+  font-weight: 500;
+  padding: 10px 14px;
+  margin: 10px;
+  border-radius: 24px;
+  transition: 0.4s ease-in-out;
+}
+header li a:hover {
+  background-color: rgba(116, 168, 74, 0.5);
+}
+.hero-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  height: 40vh;
+  text-transform: uppercase;
+  line-height: 80px;
+}
+.hero-section h1 {
+  font-size: 80px;
+  font-weight: 400;
+  color: var(--primary-dark);
+  letter-spacing: 4px;
+}
+.hero-section h2 {
+  font-size: 50px;
+  font-weight: 300;
+  letter-spacing: 3px;
+}
+.btn {
+  border: none;
+  color: var(--white);
+  background-color: var(--primary-light);
+  padding: 10px 60px;
+  font-size: 18px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  transition: 0.4s;
+  margin-top: 20px;
+}
+.btn:hover {
+  background-color: var(--primary-dark);
+}
+.about {
+  display: flex;
+  justify-content: center;
+}
+.about-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+}
+.about-section img {
+  width: 400px;
+  margin-right: 40px;
+}
+.about-section .text{
+    width: 300px;
+}
+.about-section .text h1 {
+    text-transform: uppercase;
+    font-size: 38px;
+    font-weight: 500;
+}
+
+.talk-section {
+  margin-top: 400px;
+  width: 100%;
+  height: 533px;
+  background-repeat: no-repeat;
+  background-image: url(/img/talk-to-us.png);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.talk-section h1 {
+  font-size: 38px;
+  text-transform: uppercase;
+  font-weight: 500;
+  color: var(--primary-dark);
+  letter-spacing: 2px;
+}
+.talk-section p {
+  max-width: 400px;
+  text-align: center;
+  margin: 10px 0;
+}
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 10px 100px;
+}
+footer h2 {
+  text-transform: uppercase;
+  font-weight: 700;
+}
+footer h3 {
+  color: #575757;
+  font-weight: 400;
+}
